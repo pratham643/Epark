@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preload" type="text/css" as="style" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Check E-Challan - Online Traffic Challan Status, Enquiry &amp;Payment | Epark</title>
+        <meta name="description" content="E-Challan and traffic fines can now be easily check online. Know more about what is e challan,  e-challan status check and enquiry and how to make online challan payment at Epark"/>
+        <link rel="canonical" href="https://parkplus.io/e-challan"/>
+        <link rel="alternate" href="parkplus://app/?src=challan&amp;url=https://parkplus.io/e-challan&amp;web_title=E Challan"/>
+        <meta name="robots" content="index, follow"/>
+        <link rel="preload" as="image" imageSrcSet="https://i.postimg.cc/52mddKdS/challan1.png&amp;w=640&amp;q=75 640w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=750&amp;q=75 750w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=828&amp;q=75 828w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=1080&amp;q=75 1080w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=1200&amp;q=75 1200w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=1920&amp;q=75 1920w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=2048&amp;q=75 2048w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="https://i.postimg.cc/85Q07hSz/search.png&amp;w=640&amp;q=75 640w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=750&amp;q=75 750w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=828&amp;q=75 828w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=1080&amp;q=75 1080w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=1200&amp;q=75 1200w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=1920&amp;q=75 1920w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=2048&amp;q=75 2048w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=640&amp;q=75 640w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=750&amp;q=75 750w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=828&amp;q=75 828w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=1080&amp;q=75 1080w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=1200&amp;q=75 1200w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=1920&amp;q=75 1920w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=2048&amp;q=75 2048w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <noscript>
+            <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+        </noscript>
+        <link rel="preload" as="image" imageSrcSet="https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=640&amp;q=75 640w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=750&amp;q=75 750w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=828&amp;q=75 828w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=1080&amp;q=75 1080w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=1200&amp;q=75 1200w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=1920&amp;q=75 1920w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=2048&amp;q=75 2048w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons1_6c714ed7e8.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons1_6c714ed7e8.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons1_6c714ed7e8.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons1_6c714ed7e8.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons1_6c714ed7e8.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons1_6c714ed7e8.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons1_6c714ed7e8.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons1_6c714ed7e8.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons2_f1983a2d69.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons2_f1983a2d69.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons2_f1983a2d69.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons2_f1983a2d69.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons2_f1983a2d69.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons2_f1983a2d69.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons2_f1983a2d69.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons2_f1983a2d69.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons3_ffe3a84d3d.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons3_ffe3a84d3d.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons3_ffe3a84d3d.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons3_ffe3a84d3d.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons3_ffe3a84d3d.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons3_ffe3a84d3d.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons3_ffe3a84d3d.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons3_ffe3a84d3d.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_10_a9ce5e4b00.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_10_a9ce5e4b00.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_10_a9ce5e4b00.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_10_a9ce5e4b00.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_10_a9ce5e4b00.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_10_a9ce5e4b00.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_10_a9ce5e4b00.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_10_a9ce5e4b00.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons5_4a68cb50a5.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons5_4a68cb50a5.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons5_4a68cb50a5.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons5_4a68cb50a5.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons5_4a68cb50a5.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons5_4a68cb50a5.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons5_4a68cb50a5.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons5_4a68cb50a5.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_08_39976d5d6b.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_08_39976d5d6b.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_08_39976d5d6b.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_08_39976d5d6b.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_08_39976d5d6b.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_08_39976d5d6b.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_08_39976d5d6b.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_08_39976d5d6b.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_05_47915aa9fa.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_05_47915aa9fa.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_05_47915aa9fa.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_05_47915aa9fa.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_05_47915aa9fa.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_05_47915aa9fa.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_05_47915aa9fa.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_05_47915aa9fa.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_06_20514007a3.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_06_20514007a3.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_06_20514007a3.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_06_20514007a3.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_06_20514007a3.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_06_20514007a3.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_06_20514007a3.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FImage_06_20514007a3.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <link rel="preload" as="image" imageSrcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons9_821cff616e.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons9_821cff616e.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons9_821cff616e.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons9_821cff616e.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons9_821cff616e.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons9_821cff616e.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons9_821cff616e.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2Freasons9_821cff616e.png&amp;w=3840&amp;q=75 3840w" imageSizes="100vw"/>
+        <script type="application/ld+json">
+            {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What documents should I carry with me to avoid getting challans?","acceptedAnswer":{"@type":"Answer","text":" A: While driving, you must always have your: \n\n- Driving license\n- Car registration\n- Pollution/emission test certificate\n- Insurance certificate\n- Taxation certificate"}},{"@type":"Question","name":" How can I do a Challan check online?","acceptedAnswer":{"@type":"Answer","text":"A: Sometimes, a person might miss a message or not receive a physical copy of their e-challan. In such a case, you can visit https://echallan.parivahan.gov.in/ and check the e-challan status online. All you have to do is add your challan, vehicle, or DL number and you will be shown if there are any challans pending on your name. "}},{"@type":"Question","name":" What happens if I don’t pay my traffic challan on time?","acceptedAnswer":{"@type":"Answer","text":"A: An offender is given up to 60 days to pay off their challan. In case a person fails to do so, they will have a police officer personally visiting their registered address to collect the payment. If one is still unable to clear their e-challan dues, their case is moved to the court a-nd they have to visit it to clear the payment."}},{"@type":"Question","name":" Can e challan be paid on spot?","acceptedAnswer":{"@type":"Answer","text":"A: Yes, you can pay the e-challan to the prosecuting officer who has the e-challan machine to make a payment through a debit or credit card. You can also pay by cash."}},{"@type":"Question","name":"What should I do to avoid getting an e challan?","acceptedAnswer":{"@type":"Answer","text":"Always keep these rules in mind when driving on the road to avoid getting a police e challan: \n1. Have a document checklist in place and make sure you always have your car’s registration certificate, driver’s license, and insurance papers in your car.\n2. Leave home on time so that you don’t have to rush or go over the speed limit or jump signals to reach someplace on time.\n3. Be mindful of your surroundings so that you can follow all rules, not only when you find cops around but otherwise as well.\n"}},{"@type":"Question","name":"What documents do I need to while driving to avoid traffic police e challan?","acceptedAnswer":{"@type":"Answer","text":"These documents are a must-have when driving on the Indian roads: \n- A valid driver’s license\n- Vehicle registration number\n- Vehicle’s insurance policy \n- PUC (Pollution Under Control) certificate\n- Permit, if needed"}},{"@type":"Question","name":"Is the e challan system working across all states and cities in India?","acceptedAnswer":{"@type":"Answer","text":"Yes, the online traffic challan system is working across most states and cities in India."}},{"@type":"Question","name":"Is it okay to make a Parivahan challan payment through their website?","acceptedAnswer":{"@type":"Answer","text":"Yes, a Parivahan challan payment can be made through its official website."}},{"@type":"Question","name":"Can I be issued a bike challan for riding with more than 2 people?","acceptedAnswer":{"@type":"Answer","text":"Yes, if your bike has more than 1 pillion riders alongside the rider, you can be fined up to INR 1,000 by the traffic police.\n"}},{"@type":"Question","name":"What are the most common reasons a citizen gets a traffic police e challan in India?","acceptedAnswer":{"@type":"Answer","text":"The most common reasons for someone being issued with a traffic police e challan are:\n- Overspeeding\n- Jumping signals\n- Driving without a valid insurance\n- Driving without a valid PUC (Pollution Under Control) certificate\n- Driving under the influence of alcohol \n"}}]}
+        </script>
+        <script type="application/ld+json">
+            {"@context":"https://schema.org","@type":"MobileApplication","name":"Epark","operatingSystem":"ANDROID and iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","ratingCount":"71140"},"applicationCategory":"Apps","potentialAction":{"@type":"ViewAction","target":[{"@type":"EntryPoint","actionApplication":{"@type":"SoftwareApplication","@id":"com.ovunque.parkwheels","name":"Epark Parking | FASTag | RTO","operatingSystem":"ANDROID","applicationCategory":"Apps","applicationSubCategory":"Auto & Vehicles","downloadUrl":"https://play.google.com/store/apps/details?id:com.ovunque.parkwheels","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","ratingCount":"71140"}}},{"@type":"EntryPoint","actionApplication":{"@type":"SoftwareApplication","@id":"1244749178","name":"Epark | Find Parking, Challan","operatingSystem":"iOS","applicationCategory":"Travel","downloadUrl":"https://apps.apple.com/in/app/park-find-parking-challan/id1244749178","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.0","ratingCount":"737"}}}]},"description":"Epark app is a one-stop solution for car owners. What you know was the best FASTag app offers so much more. From finding and booking parking spots near you and selling your car to getting your car cleaned daily right at your doorstep."}
+        </script>
+        <script type="application/ld+json">
+            {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"e-challan","url":"https://parkplus.io/e-challan"}
+        </script>
+        <meta name="next-head-count" content="25"/>
+        <link rel="manifest" href="/manifest.json"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="google-site-verification" content="XI3T7tRvx6_O01YDMxzTYAD-kayu9c_RrBpZGiFDKMY"/>
+        <link href="/img/icons/android/mipmap-xxxhdpi/ic_launcher.png"/>
+        <link rel="apple-touch-icon" href="/img/icons/ios/180.png"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link href="/img/icons/ios/180.png"/>
+        <link media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/img/splash/ios/1136x640.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/ios/180x180.png"/>
+        <link media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/img/splash/ios/640x1136.png"/>
+        <link media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/img/splash/ios/2688x1242.png"/>
+        <link media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/img/splash/ios/1792x828.png"/>
+        <link media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/img/splash/ios/1125x2436.png"/>
+        <link media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/img/splash/ios/828x1792.png"/>
+        <link media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/img/splash/ios/2436x1125.png"/>
+        <link media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/img/splash/ios/1242x2208.png"/>
+        <link media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/img/splash/ios/2208x1242.png"/>
+        <link media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/img/splash/ios/1334x750.png"/>
+        <link media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/img/splash/ios/750x1334.png"/>
+        <link media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/img/splash/ios/2732x2048.png"/>
+        <link media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/img/splash/ios/2048x2732.png"/>
+        <link media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/img/splash/ios/2388x1668.png"/>
+        <link media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/img/splash/ios/1668x2388.png"/>
+        <link media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/img/splash/ios/2224x1668.png"/>
+        <link media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/img/splash/ios/1242x2688.png"/>
+        <link media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/img/splash/ios/1668x2224.png"/>
+        <link media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/img/splash/ios/1536x2048.png"/>
+        <link media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/img/splash/ios/2048x1536.png"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <link rel="preload" href="/fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="preload" href="/fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="preload" href="/fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="dns-prefetch" href="http://www.gstatic.com"/>
+        <link rel="preconnect" href="http://www.gstatic.com"/>
+        <script defer="" type="application/ld+json">
+            {"@context":"http://www.schema.org","@type":"Organization","name":"Epark","url":"https://parkplus.io/","sameAs":["https://twitter.com/parkplus_io","https://www.facebook.com/prkpls/","https://www.instagram.com/parkplusio/","https://www.linkedin.com/company/parkplus/","https://www.youtube.com/channel/UCschDYcHV2A6m-qi5fwCNDw"],"logo":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/parkplus_logo_c9cf41bdb8.png","description":"At Epark, we are building an eco-system for car owners which will be a one-stop solution for all their needs. From parking reservation to challan payments, FASTag recharge to RTO related information, real time fuel price information to nearest PUC center search, we have a lot to offer. We also offer smart parking automated solutions to corporates, apartments, malls, hospitals and other commercial establishments. Our app is a life savior for daily commuters as it provides them with a seamless and real-time experience for parking discovery, booking, payment and tracking.","address":{"@type":"PostalAddress","streetAddress":"5th Floor, Tower A, Unitech Cyber Park, Sec-39","addressLocality":"Gurugram","addressRegion":"Haryana","postalCode":"122022","addressCountry":"India"},"brand":{"@type":"Brand","name":"Epark"}}
+        </script>
+        <link rel="preload" href="/epark/epark/_next/static/css/1467bfc384eab487.css" as="style"/>
+        <link rel="stylesheet" href="/epark/epark/_next/static/css/1467bfc384eab487.css" data-n-g=""/>
+        <link rel="preload" href="/epark/epark/_next/static/css/52a9b2b1b092d380.css" as="style"/>
+        <link rel="stylesheet" href="/epark/epark/_next/static/css/52a9b2b1b092d380.css" data-n-p=""/>
+        <link rel="preload" href="/epark/epark/_next/static/css/9c1766ef8129d96a.css" as="style"/>
+        <link rel="stylesheet" href="/epark/epark/_next/static/css/9c1766ef8129d96a.css" data-n-p=""/>
+        <link rel="preload" href="/epark/epark/_next/static/css/e3880977063dcf5c.css" as="style"/>
+        <link rel="stylesheet" href="/epark/epark/_next/static/css/e3880977063dcf5c.css" data-n-g=""/>
+        <link rel="preload" href="/epark/epark/_next/static/css/11b565aca16c6ab8.css" as="style"/>
+        <link rel="stylesheet" href="/epark/epark/_next/static/css/11b565aca16c6ab8.css" data-n-g=""/>
+        <noscript data-n-css=""></noscript>
+        <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+        <script src="/_next/static/chunks/webpack-61b568c75f2ad7de.js" defer=""></script>
+        <script src="/_next/static/chunks/framework-6397aa3657684b00.js" defer=""></script>
+        <script src="/_next/static/chunks/main-af7b55ac16ea9316.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/_app-fc026154c94387cf.js" defer=""></script>
+        <script src="/_next/static/chunks/1664-432be69666486b00.js" defer=""></script>
+        <script src="/_next/static/chunks/5675-114b6481058bc7ce.js" defer=""></script>
+        <script src="/_next/static/chunks/129-d124181bd88415fb.js" defer=""></script>
+        <script src="/_next/static/chunks/3322-1cf14e2cb88faaad.js" defer=""></script>
+        <script src="/_next/static/chunks/8661-e8666fdb9c5e6c78.js" defer=""></script>
+        <script src="/_next/static/chunks/3788-eeca4f3ecc5838b6.js" defer=""></script>
+        <script src="/_next/static/chunks/9349-eef525d53d9f31ad.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/e-challan-d1caf623fc28191a.js" defer=""></script>
+        <script src="/_next/static/-tifvKZoILFtmVDByeJR4/_buildManifest.js" defer=""></script>
+        <script src="/_next/static/-tifvKZoILFtmVDByeJR4/_ssgManifest.js" defer=""></script>
+    </head>
+    <body class="app_body">
+        <div id="__next">
+            <div class="challan_root__2YaOV">
+                <div class="navbar_layout_v1_navbar_layout_v1__09XVx">
+                    <div class="cmn_only_desktop">
+                        <header class="headerv1_root__Hd_M5">
+                            <div class="headerv1_box__M5Geg cmn_container">
+                                <div class="headerv1_logo___Xpcw">
+                                    <a href="index.html" aria-label="home">
+                                        <svg id="parkplus-website-logo_svg__Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 134 49" xml:space="preserve">
+                                            <style>
+                                                .parkplus-website-logo_svg__st0 {
+                                                    fill: #07f
+                                                }
+                                            </style>
+                                            <img src="https://i.postimg.cc/pVgpBLS7/Logo.png" style="height: 150px alt"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="headerv1_link_n_options__mnQY6">
+                                    <div class="headerv1_item__wvdmO headerv1_item_link__Dvwqm false false false false">
+                                        <div class="headerv1_link_item__n74ky" aria-hidden="true">
+                                            <span class="headerv1_hot_logo__Ov3tl">
+                                                <svg width="32" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#hot_svg__prefix__clip0)">
+                                                        <rect y="10.492" width="28.415" height="14.208" rx="3" transform="rotate(-21.67 0 10.492)" fill="url(#hot_svg__prefix__paint0_linear)"></rect>
+                                                        <path d="M8.655 17.97l1.073-.427-.954-2.401 2.747-1.091.954 2.4 1.076-.427-2.245-5.652-1.077.428.95 2.392-2.746 1.091-.95-2.392-1.074.427 2.246 5.651zm10.238-7.34c-.726-1.827-2.323-2.44-3.877-1.822-1.557.619-2.296 2.159-1.57 3.986.725 1.824 2.32 2.44 3.877 1.82 1.554-.617 2.296-2.158 1.57-3.985zm-1.08.428c.511 1.286.111 2.254-.855 2.638-.964.383-1.922-.045-2.433-1.331-.51-1.286-.108-2.255.856-2.638.966-.384 1.921.045 2.432 1.331zm.797-2.595l1.833-.728 1.904 4.794 1.065-.423-1.904-4.794 1.832-.728-.341-.858-4.73 1.879.342.858z" fill="#fff"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <linearGradient id="hot_svg__prefix__paint0_linear" x1="14.208" y1="10.492" x2="14.208" y2="24.7" gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="#FF6C6C"></stop>
+                                                            <stop offset="1" stop-color="#FF0080"></stop>
+                                                        </linearGradient>
+                                                        <clipPath id="hot_svg__prefix__clip0">
+                                                            <rect y="10.492" width="28.415" height="14.208" rx="3" transform="rotate(-21.67 0 10.492)" fill="#fff"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            <span class="headerv1_label__fgsR1">FASTag</span>
+                                        </div>
+                                    </div>
+                                    <div class="headerv1_item__wvdmO false false false headerv1_item_menu__rJXzA false">
+                                        <div class="headerv1_link_item__n74ky" aria-hidden="true">
+                                            <span class="headerv1_hot_logo__Ov3tl"></span>
+                                            <span class="headerv1_label__fgsR1">
+                                                Company
+                                                <span class="headerv1_icon__7VzUD">
+                                                    <svg width="15" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.125 1.125l-3.75 3.75-3.75-3.75" stroke="#00f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                            <div class="headerv1_menu_option__YHsL_ cmn_animation">
+                                                <div class="headerv1_company_option__2FB2t headerv1_right_option__WxJFl">
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/about-us">
+                                                                About Us
+                                                                <!-- -->
+                                                                <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.958 2.917L9.042 7l-4.084 4.083" stroke="#0012FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                                                                <p>We started with a vision to solve the problem of parking in India, however, we went all hands on deck and decided to build everything a car owner needs in today &#x27;s time</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/newsroom">
+                                                                Newsroom
+                                                                <!-- -->
+                                                                <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.958 2.917L9.042 7l-4.084 4.083" stroke="#0012FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                                                                <p>Get a glimpse of when we made it to the news. Find media mentions and company news here. Stay updated about everything that Epark is doing.</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/case-study">
+                                                                Case Studies
+                                                                <!-- -->
+                                                                <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.958 2.917L9.042 7l-4.084 4.083" stroke="#0012FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                                                                <p>We believe in creating innovative and customised solutions for establishments. Read more about how we solved the problem of parking for our clients</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="headerv1_item__wvdmO false false false headerv1_item_menu__rJXzA false">
+                                        <div class="headerv1_link_item__n74ky" aria-hidden="true">
+                                            <span class="headerv1_hot_logo__Ov3tl"></span>
+                                            <span class="headerv1_label__fgsR1">
+                                                Products
+                                                <span class="headerv1_icon__7VzUD">
+                                                    <svg width="15" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.125 1.125l-3.75 3.75-3.75-3.75" stroke="#00f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                            <div class="headerv1_menu_option__YHsL_ cmn_animation">
+                                                <div class="headerv1_right_option__WxJFl">
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_label__t9i_p">FOR BUSINESSES</div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO" style="background-color:#FFF7D6">
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/business">
+                                                                Epark for Businesses
+                                                                <!-- -->
+                                                                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14.43 5.93L20.5 12l-6.07 6.07M3.5 12h16.83" stroke="#0012FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                                                                <p>Our technology has transformed the tricky traffic movement in parking lots for various business establishments</p>
+                                                                <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
+                                                                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                                                                        <img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27276%27%20height=%27148%27/%3e"/>
+                                                                    </span>
+                                                                    <img alt="Park+ for Businesses" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+                                                                    <noscript>
+                                                                        <img alt="Park+ for Businesses" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcar-parking.25ee76bd.png&amp;w=384&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcar-parking.25ee76bd.png&amp;w=640&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcar-parking.25ee76bd.png&amp;w=640&amp;q=75" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/>
+                                                                    </noscript>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO" style="background-color:#E3F9E7">
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/ev">
+                                                                EV Charging Solution
+                                                                <!-- -->
+                                                                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14.43 5.93L20.5 12l-6.07 6.07M3.5 12h16.83" stroke="#0012FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                                                                <p>Proactively formulate global niche markets whereas maintainable innovation. Progressively.</p>
+                                                                <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
+                                                                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                                                                        <img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27276%27%20height=%27148%27/%3e"/>
+                                                                    </span>
+                                                                    <img alt="EV Charging Solution" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+                                                                    <noscript>
+                                                                        <img alt="EV Charging Solution" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fev-charging.2e1ecfe8.png&amp;w=384&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fev-charging.2e1ecfe8.png&amp;w=640&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fev-charging.2e1ecfe8.png&amp;w=640&amp;q=75" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/>
+                                                                    </noscript>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="headerv1_divider__jcu0E"></div>
+                                                <div class="headerv1_left_option___RiXp">
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_label__t9i_p">FOR CUSTOMERS</div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_icon__nQZXX">
+                                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.384 19.215c1.657-.845 8.104-4.528 8.104-10.727a8.488 8.488 0 00-16.977 0c0 6.2 6.447 9.882 8.104 10.727a.84.84 0 00.77 0zM12 14.55a6.063 6.063 0 100-12.126 6.063 6.063 0 000 12.126z" fill="#00163E"></path>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.58 17.01a.96.96 0 011.343-.198c.873.648 1.525 1.527 1.525 2.59s-.652 1.942-1.525 2.59c-.88.654-2.084 1.155-3.448 1.492C15.1 23.824 13.558 24 12 24c-1.559 0-3.1-.176-4.475-.516-1.364-.337-2.567-.838-3.448-1.492-.873-.648-1.525-1.527-1.525-2.59s.652-1.942 1.525-2.59a.96.96 0 011.144 1.542c-.617.458-.75.834-.75 1.048 0 .214.133.59.75 1.048.609.452 1.55.87 2.765 1.17 1.207.3 2.593.46 4.014.46 1.421 0 2.807-.16 4.014-.46 1.216-.3 2.156-.718 2.765-1.17.617-.458.75-.834.75-1.048 0-.214-.133-.59-.75-1.048a.96.96 0 01-.199-1.343z" fill="#00163E"></path>
+                                                                <path d="M11.312 8.118h1.056c.286 0 .517-.088.695-.262.177-.182.266-.422.266-.72 0-.307-.089-.547-.266-.722-.171-.182-.403-.273-.695-.273h-1.056v1.977zm1.209 1.485h-1.219v2.784H9.8V4.646h2.72c.686 0 1.24.232 1.665.698.431.466.647 1.06.647 1.78 0 .735-.216 1.332-.647 1.791-.425.459-.98.688-1.664.688z" fill="#00163E"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/epark/epark/parking.html">Parking</a>
+                                                            <p>Find and book parking near you</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_icon__nQZXX">
+                                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.152 2h.644c.515 0 .94 0 1.288.024.361.024.695.077 1.017.21A3.076 3.076 0 0111.765 3.9c.133.322.186.656.21 1.017.024.348.024.773.024 1.288v.027a.77.77 0 01-1.539 0c0-.548 0-.921-.02-1.21-.019-.283-.054-.43-.097-.533a1.539 1.539 0 00-.832-.832c-.103-.043-.25-.078-.533-.097-.29-.02-.662-.02-1.21-.02h-.577c-.826 0-1.388 0-1.818.044-.417.043-.624.119-.767.215a1.538 1.538 0 00-.425.424c-.096.144-.172.35-.214.768-.044.43-.045.991-.045 1.818v10.384c0 .826.001 1.388.045 1.818.042.417.118.624.214.768.113.168.257.312.425.424.143.096.35.172.767.215.43.043.992.044 1.818.044.827 0 1.388 0 1.818-.044.417-.043.624-.119.768-.215.168-.112.312-.256.424-.424.096-.144.172-.35.215-.768.044-.43.044-.992.044-1.818v-3.461a.77.77 0 011.539 0v3.501c0 .777 0 1.417-.053 1.934-.054.539-.173 1.028-.466 1.466a3.078 3.078 0 01-.848.85c-.439.292-.928.41-1.467.465C8.649 22 8.009 22 7.232 22h-.08c-.776 0-1.416 0-1.933-.053-.54-.055-1.028-.173-1.467-.466a3.077 3.077 0 01-.849-.849c-.293-.438-.411-.927-.466-1.466-.052-.517-.052-1.157-.052-1.934V6.768c0-.777 0-1.417.052-1.934.055-.539.173-1.028.466-1.467.225-.335.513-.624.85-.848.438-.293.927-.412 1.466-.466C5.736 2 6.376 2 7.152 2z" fill="#00163E"></path>
+                                                                <rect x="16.231" y="13.538" width="5.385" height="8.462" rx="2" fill="#00163E"></rect>
+                                                                <path d="M6.615 10.203c0-.94.723-1.72 1.66-1.792l10.951-.842a2.219 2.219 0 11.17 4.431H8.413a1.797 1.797 0 01-1.798-1.797z" fill="#00163E"></path>
+                                                                <path stroke="#fff" stroke-width="1.5" stroke-linecap="round" d="M9.853 10.065l-.148.327m3.985-.737l-.285.589m4.132-.971l-.46.956"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/epark/epark/fastag.html">FASTag</a>
+                                                            <p>Buy, activate, and recharge FASTag</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_icon__nQZXX">
+                                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M8.885 19.71v.598a1.326 1.326 0 01-.396.98 1.391 1.391 0 01-.994.408 1.438 1.438 0 01-1.062-.417 1.34 1.34 0 01-.392-1.05v-.677m12.929 0v.678a1.342 1.342 0 01-.4.974 1.408 1.408 0 01-.99.413 1.453 1.453 0 01-1.006-.407 1.384 1.384 0 01-.416-.98v-.52" fill="#00163E"></path>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.017 6.062a.872.872 0 00-.534.177.81.81 0 00-.296.45.606.606 0 01-.814.417 1.642 1.642 0 00-1.45.115.606.606 0 01-.89-.333.75.75 0 00-.268-.37.806.806 0 00-.438-.156.774.774 0 00-.418.138.722.722 0 00-.266.344.606.606 0 01-.88.314 1.04 1.04 0 00-1.384.3.945.945 0 00-.157.446.95.95 0 00.262.636c.17.18.408.295.666.315a.606.606 0 11-.094 1.209 2.238 2.238 0 01-1.454-.693 2.161 2.161 0 01-.59-1.527c.024-.378.148-.743.359-1.058.21-.316.5-.571.839-.743a2.256 2.256 0 011.606-.165 1.987 1.987 0 011.538-.728 2.018 2.018 0 011.517.77 2.852 2.852 0 011.383-.101 2.075 2.075 0 011.768-.969h.001l-.003.606V4.85h.002c.887 0 1.41.54 1.68 1 .041.07.077.139.11.206a2.26 2.26 0 00-.695.291l.325.512-.598.096v.001l.598-.097.599-.097V6.76l-.001-.003-.001-.007-.004-.02a2.834 2.834 0 00-.224-.674 2.258 2.258 0 011.915.43 2.2 2.2 0 01.583.71.606.606 0 01-1.078.554.979.979 0 00-.261-.317 1.026 1.026 0 00-.805-.212 1.035 1.035 0 00-.397.15.606.606 0 01-.923-.412v-.003l-.006-.026a1.652 1.652 0 00-.181-.466c-.142-.24-.33-.402-.638-.402h-.003zm5.795 6.743c.233-.38.73-.5 1.111-.267l-.422.69.422-.69.002.001.003.002.008.005.024.016.082.053a6.944 6.944 0 011.084.913c.573.596 1.268 1.554 1.268 2.757v.022c0 .43 0 .896-.044 1.335-.045.447-.14.925-.366 1.361a2.44 2.44 0 01-1.12 1.092c-.506.247-1.117.356-1.832.356H6.978c-.718 0-1.331-.113-1.837-.366a2.464 2.464 0 01-1.117-1.102c-.224-.438-.319-.916-.364-1.36a13.335 13.335 0 01-.044-1.317v-.02c0-1.183.699-2.142 1.265-2.737a7.257 7.257 0 011.158-.98l.024-.016.008-.005.003-.002h.001l.434.681-.433-.682a.808.808 0 01.868 1.363h-.001l-.01.008-.053.035a5.645 5.645 0 00-.828.712c-.476.5-.82 1.07-.82 1.622 0 .443.001.827.036 1.175.035.348.1.6.195.786a.85.85 0 00.4.393c.212.106.556.196 1.115.196h11.054c.563 0 .909-.088 1.122-.192a.825.825 0 00.395-.382c.093-.18.158-.43.193-.78.035-.35.036-.741.036-1.196 0-.578-.347-1.148-.817-1.637a5.328 5.328 0 00-.873-.726l-.009-.006a.809.809 0 01-.267-1.11z" fill="#00163E"></path>
+                                                                <path d="M2.905 5.684c.5 0 .905-.395.905-.882a.894.894 0 00-.905-.883c-.5 0-.905.395-.905.883 0 .487.405.882.905.882zm4.574 12.477c.5 0 .905-.395.905-.883a.894.894 0 00-.905-.883c-.5 0-.905.396-.905.883 0 .488.405.883.905.883zm10.036 0c.5 0 .905-.395.905-.883a.894.894 0 00-.905-.883c-.5 0-.905.396-.905.883 0 .488.405.883.905.883zm2.489-10.688c.571 0 1.034-.452 1.034-1.01 0-.556-.463-1.008-1.034-1.008s-1.034.452-1.034 1.009c0 .557.463 1.009 1.034 1.009zm-4.622-2.711c.696 0 1.26-.55 1.26-1.23 0-.679-.564-1.23-1.26-1.23-.696 0-1.26.551-1.26 1.23 0 .68.564 1.23 1.26 1.23z" fill="#00163E"></path>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18 9.702c.635-.706 1.496-1.05 2.74-1.05h5.187c1.238 0 2.094.345 2.726 1.05.291.324.509.695.695 1.061.12.236.242.504.363.769.06.132.12.264.18.39.25.536.332 1.059.206 1.546a1.87 1.87 0 01-.713 1.035 2.736 2.736 0 01-.796.4 3.077 3.077 0 01-.361.092c-.011.003-.02.004-.028.005l-.01.002h-.005l-.001.001s-.002 0-.123-.799l.121.8a.804.804 0 01-.096.008c-3.168.095-6.352.095-9.52 0a.807.807 0 01-.213-.035 3.057 3.057 0 01-.273-.074 2.727 2.727 0 01-.793-.402 1.88 1.88 0 01-.71-1.031c-.126-.484-.05-1.006.196-1.542.056-.12.112-.245.168-.37.122-.273.245-.547.368-.791.184-.368.4-.74.693-1.065zm.735 3.704H7.91m.005 0zm-.036-.007a1.426 1.426 0 01-.123-.034 1.124 1.124 0 01-.32-.155c-.081-.062-.106-.11-.116-.147-.009-.034-.033-.169.101-.46l.193-.426c.113-.252.212-.473.318-.686.158-.314.298-.54.45-.71.255-.283.63-.514 1.537-.514h5.188c.896 0 1.268.23 1.524.515.154.17.296.397.455.712.106.209.204.423.315.667.064.138.131.286.207.447.137.293.112.426.104.457-.008.034-.032.081-.115.143-.089.066-.207.12-.323.156-.05.017-.094.028-.123.034-3.086.092-6.187.092-9.272.001zM3.874 11.58a2.443 2.443 0 011.358-.426.606.606 0 110 1.212c-.175 0-.45.057-.661.206-.181.126-.349.338-.349.765a.606.606 0 01-1.212 0c0-.835.371-1.411.864-1.757zm17.262 0a2.443 2.443 0 00-1.358-.426.606.606 0 100 1.212c.175 0 .45.057.662.206.18.126.348.338.348.765a.606.606 0 101.212 0c0-.835-.371-1.411-.864-1.757z" fill="#00163E"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/epark/epark/car-wash.html">Car Wash</a>
+                                                            <p>Professional doorstep car cleaning</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_icon__nQZXX">
+                                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.37 3.495a.819.819 0 01-.809.829c-.975.012-1.275.085-1.461.21-.138.092-.256.21-.348.347-.07.106-.136.27-.173.635-.039.38-.04.879-.04 1.626v9.88c0 1.003.002 1.674.069 2.173.064.475.173.671.3.798.128.127.323.237.799.3.5.068 1.17.07 2.173.07h6.24c1.004 0 1.674-.002 2.173-.07.476-.063.671-.173.799-.3.127-.127.236-.323.3-.798.067-.5.069-1.17.069-2.173v-9.88c0-.747-.001-1.246-.04-1.626-.037-.366-.102-.53-.173-.635a1.261 1.261 0 00-.348-.348c-.186-.124-.486-.197-1.461-.21a.819.819 0 01.02-1.636c.908.01 1.703.052 2.351.485.317.212.588.483.8.8.28.419.39.883.44 1.378.048.473.048 1.056.048 1.75v9.978c0 .932 0 1.714-.083 2.335-.088.657-.284 1.256-.766 1.738-.482.482-1.08.677-1.738.766C16.89 22 16.11 22 15.176 22H8.824c-.933 0-1.714 0-2.335-.083-.657-.089-1.256-.284-1.738-.766-.482-.482-.678-1.081-.766-1.738-.083-.621-.083-1.403-.083-2.335V7.1c0-.695 0-1.278.048-1.75.05-.496.16-.96.44-1.38.212-.316.483-.587.8-.799.649-.433 1.443-.474 2.351-.485a.819.819 0 01.829.808z" fill="#00163E"></path>
+                                                                <path d="M8.765 17.367h6.47" stroke="#00163E" stroke-width="1.5" stroke-linecap="round"></path>
+                                                                <rect x="8.765" y="2" width="6.471" height="3.235" rx="1.618" fill="#00163E"></rect>
+                                                                <path d="M14.425 9.94a.509.509 0 01-.495.519h-.663c-.089.41-.287.783-.574 1.079a2.077 2.077 0 01-1.39.659l1.87 1.852a.538.538 0 01.02.727.483.483 0 01-.702.026l-2.766-2.735a.522.522 0 01-.153-.384.492.492 0 01.495-.493h1.108c.306 0 .603-.134.82-.368.095-.109.169-.228.233-.358h-2.162a.509.509 0 01-.494-.519c0-.285.222-.519.495-.519h2.161c-.188-.415-.588-.726-1.053-.726h-1.109a.509.509 0 01-.494-.519c0-.285.222-.519.495-.519h3.863a.51.51 0 01.495.519.509.509 0 01-.495.519v-.005h-.95c.134.26.228.467.287.726h.663a.51.51 0 01.495.519z" fill="#00163E"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/epark/epark/e-challan.html">Challan</a>
+                                                            <p>Check real-time challans</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="headerv1_item__wvdmO">
+                                                        <div class="headerv1_item_icon__nQZXX">
+                                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M13.002 3.213l6.205 2.744a.231.231 0 01.126.215v6.454c0 2.07-.969 4.003-2.584 5.193l-3.958 2.918c-.476.35-1.107.35-1.582 0L7.252 17.82c-1.615-1.19-2.584-3.122-2.584-5.193V6.172a.23.23 0 01.126-.215l-.405-.914.405.914 6.205-2.744a2.47 2.47 0 012.004 0z" stroke="#00163E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8.667 13l1.818 1.909a.5.5 0 00.76-.042L15.332 9.5" stroke="#00163E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="headerv1_item_content__JmCW_">
+                                                            <a href="/epark/epark/car-insurance.html">Insurance</a>
+                                                            <p>Get zero-commission Car Insurance</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="headerv1_item__wvdmO headerv1_item_link__Dvwqm false false false false">
+                                        <div class="headerv1_link_item__n74ky" aria-hidden="true">
+                                            <span class="headerv1_hot_logo__Ov3tl"></span>
+                                            <span class="headerv1_label__fgsR1">Careers</span>
+                                        </div>
+                                    </div>
+                                    <div class="headerv1_item__wvdmO false headerv1_item_btn_rounded__u0aWF false false false">
+                                        <div class="headerv1_link_item__n74ky" aria-hidden="true">
+                                            <span class="headerv1_hot_logo__Ov3tl"></span>
+                                            <span class="headerv1_label__fgsR1">Get in touch 👋 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="cmn_only_mobile">
+                        <div class="page_header_root__RvENl">
+                            <div class="cmn_container page_header_box__TKO2H">
+                                <button class="page_header_logo__UJS54" type="button">
+                                    <svg id="parkplus-website-logo_svg__Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 134 49" xml:space="preserve">
+                                        <style>
+                                            .parkplus-website-logo_svg__st0 {
+                                                fill: #07f
+                                            }
+                                        </style>
+                                       <img src="https://i.postimg.cc/pVgpBLS7/Logo.png" style="height: 150px alt"/>
+                                    </svg>
+                                </button>
+                                <div class="page_header_profile_pic__ZmEMG"></div>
+                                <div>
+                                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.25 1.5c-2.75 0-2.75.208-2.75 2.75v.025c0 1.107 0 1.907.271 2.245.265.328 1.052.48 2.479.48s2.214-.153 2.479-.481C7 6.182 7 5.382 7 4.274 7 1.708 7 1.5 4.25 1.5zm0 7c-1.686 0-2.951-.177-3.646-1.04C0 6.711 0 5.689 0 4.275l.75-.025H0C0 1.38.181 0 4.25 0S8.5 1.38 8.5 4.25c0 1.438 0 2.461-.604 3.21-.695.863-1.96 1.04-3.646 1.04zm11 0c-1.686 0-2.951-.177-3.646-1.04C11 6.711 11 5.689 11 4.275l.75-.025H11C11 1.38 11.181 0 15.25 0s4.25 1.38 4.25 4.25c0 1.438 0 2.461-.604 3.21-.695.863-1.96 1.04-3.646 1.04zm-11 4c-2.75 0-2.75.208-2.75 2.75v.025c0 1.107 0 1.907.271 2.245.265.328 1.052.48 2.479.48s2.214-.153 2.479-.481C7 17.182 7 16.382 7 15.274 7 12.708 7 12.5 4.25 12.5zm0 7c-1.686 0-2.951-.177-3.646-1.04C0 17.711 0 16.689 0 15.275l.75-.025H0C0 12.38.181 11 4.25 11s4.25 1.38 4.25 4.25c0 1.438 0 2.461-.604 3.21-.695.863-1.96 1.04-3.646 1.04zm11-7c-2.75 0-2.75.208-2.75 2.75v.025c0 1.107 0 1.907.271 2.245.265.328 1.052.48 2.479.48s2.214-.153 2.479-.481c.271-.337.271-1.137.271-2.245 0-2.566 0-2.774-2.75-2.774zm0 7c-1.686 0-2.951-.177-3.646-1.04C11 17.711 11 16.689 11 15.275l.75-.025H11c0-2.87.181-4.25 4.25-4.25s4.25 1.38 4.25 4.25c0 1.438 0 2.461-.604 3.21-.695.863-1.96 1.04-3.646 1.04z" fill="#0012FF"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cmn_hide"></div>
+                    <div class="cmn_hide"></div>
+                    <div class="navbar_layout_v1_body__5QYxu">
+                        <div class="challan_hero__FD6T9 cmn_container">
+                            <div class="challan_hero__FD6T9">
+                                <div class="challan_hero_text__bIP_R">
+                                    <h2 class="challan_heading__j5rBP">Check your Challan</h2>
+                                    <button class="challan_btn__lWadi" type="button">Check Challans</button>
+                                </div>
+                                <div class="challan_img__a85VZ">
+                                    <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                                        <img alt="hero.png" sizes="100vw" srcSet="https://i.postimg.cc/52mddKdS/challan1.png&amp;w=640&amp;q=75 640w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=750&amp;q=75 750w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=828&amp;q=75 828w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=1080&amp;q=75 1080w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=1200&amp;q=75 1200w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=1920&amp;q=75 1920w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=2048&amp;q=75 2048w, https://i.postimg.cc/52mddKdS/challan1.png&amp;w=3840&amp;q=75 3840w" src="https://i.postimg.cc/52mddKdS/challan1.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain"/>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <main>
+                            <div class="challan_how_to_pay__GBqb8">
+                                <h2>How to check E Challan?</h2>
+                                <br/>
+                            </div>
+                            <section class="challan_cards__OLVjk">
+                                <div></div>
+                                <div class="challan_card_layout__zrGKd">
+                                    <div class="challan_card__bqpE6">
+                                        <div class="challan_card_img__0yKoO">
+                                            <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                                                <img alt="card1.png" sizes="100vw" srcSet="https://i.postimg.cc/85Q07hSz/search.png&amp;w=640&amp;q=75 640w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=750&amp;q=75 750w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=828&amp;q=75 828w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=1080&amp;q=75 1080w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=1200&amp;q=75 1200w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=1920&amp;q=75 1920w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=2048&amp;q=75 2048w, https://i.postimg.cc/85Q07hSz/search.png&amp;w=3840&amp;q=75 3840w" src="https://i.postimg.cc/85Q07hSz/search.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:scale-down;object-position:right top"/>
+                                            </span>
+                                        </div>
+                                        <div class="challan_card_text__W4CYb">
+                                            <h2>Search</h2>
+                                            <br/>
+                                            <p class="challan_card_subtitle__tA51_">Enter Vehicle number</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="challan_card_layout__zrGKd">
+                                    <div class="challan_card__bqpE6">
+                                        <div class="challan_card_img__0yKoO">
+                                            <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                                                <img alt="card2.png" sizes="100vw" srcSet="https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=640&amp;q=75 640w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=750&amp;q=75 750w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=828&amp;q=75 828w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=1080&amp;q=75 1080w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=1200&amp;q=75 1200w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=1920&amp;q=75 1920w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=2048&amp;q=75 2048w, https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=3840&amp;q=75 3840w" src="https://i.postimg.cc/FHtfYR6H/challan.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:scale-down;object-position:right top"/>
+                                            </span>
+                                        </div>
+                                        <div class="challan_card_text__W4CYb">
+                                            <h2>View
+</h2>
+                                            <br/>
+                                            <p class="challan_card_subtitle__tA51_">Get your Challan details</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <header class="challan_why_use_heading__pT9jw">
+                                <h1>
+                                    <br/>
+                                </h1>
+                            </header>
+                            <div class="challan_why_use__Ti4__"></div>
+                            <div class="challan_reviews__2Mxgc">
+                                <div class="challan_hero__FD6T9 cmn_container">
+                                    <div class="cmn_testimonial">
+                                        
+                            </div>
+                            <div class="challan_hero__FD6T9 cmn_container">
+                                <div class="challan_challan__l5pAo">
+                                    <div class="challan_challan_text__4lfS5">
+                                        <h1>What is traffic e-challan?</h1>
+                                        <br/>
+                                        <p>
+                                            <span class="markdown">
+                                                An e-challan is generated with the help of an electronic system and issued to defaulters who do not obey the traffic rules.If a driver is issued an e-challan, they are notified about it via a text message, or a copy of it is directly sent to the address registered with their vehicle number. 
+                                                <strong>
+                                                    <em>Traffic e challan status can also be checked online and paid through</em>
+                                                </strong>
+                                                the Epark app or government websites
+                                            </span>
+                                        </p>
+                                        <br/>
+                                    </div>
+                                    <div class="challan_challan_img__6W2TJ">
+                                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                                            <img alt="e-challan.png" sizes="100vw" srcSet="https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=640&amp;q=75 640w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=750&amp;q=75 750w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=828&amp;q=75 828w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=1080&amp;q=75 1080w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=1200&amp;q=75 1200w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=1920&amp;q=75 1920w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=2048&amp;q=75 2048w, https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=3840&amp;q=75 3840w" src="https://i.postimg.cc/FRdzFk4p/echallan-logo.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain"/>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <header class="challan_reasons_heading__LdNRm">
+                                
+                            <div class="challan_faq__y2ZO3">
+                                <div class="FAQs_root__ixalE cmn_container">
+                                    <div class="FAQs_head__I_1TR">
+                                        <h2 id="frequently-asked-question" class="FAQs_title_text__HAQoR">Frequently Asked Question</h2>
+                                    </div>
+                                    <div class="FAQs_body__L3jrf">
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">What documents should I carry with me to avoid getting challans?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="FAQs_desc__3DglO cmn_animation cmn_hide">
+                                                <p>A: While driving, you must always have your:</p>
+                                                <ul>
+                                                    <li>Driving license</li>
+                                                    <li>Car registration</li>
+                                                    <li>Pollution/emission test certificate</li>
+                                                    <li>Insurance certificate</li>
+                                                    <li>Taxation certificate</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">How can I do a Challan check online?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <span class="FAQs_desc__3DglO cmn_animation cmn_hide">
+                                                A: Sometimes, a person might miss a message or not receive a physical copy of their e-challan. In such a case, you can visit <a href="https://echallan.parivahan.gov.in/">https://echallan.parivahan.gov.in/</a>
+                                                and check the e-challan status online. All you have to do is add your challan, vehicle, or DL number and you will be shown if there are any challans pending on your name. 
+                                            </span>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">What happens if I don’t pay my traffic challan on time?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <span class="FAQs_desc__3DglO cmn_animation cmn_hide">A: An offender is given up to 60 days to pay off their challan. In case a person fails to do so, they will have a police officer personally visiting their registered address to collect the payment. If one is still unable to clear their e-challan dues, their case is moved to the court a-nd they have to visit it to clear the payment.</span>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">Can e challan be paid on spot?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <span class="FAQs_desc__3DglO cmn_animation cmn_hide">A: Yes, you can pay the e-challan to the prosecuting officer who has the e-challan machine to make a payment through a debit or credit card. You can also pay by cash.</span>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">What should I do to avoid getting an e challan?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="FAQs_desc__3DglO cmn_animation cmn_hide">
+                                                <p>Always keep these rules in mind when driving on the road to avoid getting a police e challan:</p>
+                                                <ol start="1">
+                                                    <li>Have a document checklist in place and make sure you always have your car’s registration certificate, driver’s license, and insurance papers in your car.</li>
+                                                    <li>Leave home on time so that you don’t have to rush or go over the speed limit or jump signals to reach someplace on time.</li>
+                                                    <li>Be mindful of your surroundings so that you can follow all rules, not only when you find cops around but otherwise as well.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">What documents do I need to while driving to avoid traffic police e challan?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="FAQs_desc__3DglO cmn_animation cmn_hide">
+                                                <p>These documents are a must-have when driving on the Indian roads:</p>
+                                                <ul>
+                                                    <li>A valid driver’s license</li>
+                                                    <li>Vehicle registration number</li>
+                                                    <li>Vehicle’s insurance policy</li>
+                                                    <li>PUC (Pollution Under Control) certificate</li>
+                                                    <li>Permit, if needed</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">Is the e challan system working across all states and cities in India?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <span class="FAQs_desc__3DglO cmn_animation cmn_hide">Yes, the online traffic challan system is working across most states and cities in India.</span>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">Is it okay to make a Parivahan challan payment through their website?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <span class="FAQs_desc__3DglO cmn_animation cmn_hide">Yes, a Parivahan challan payment can be made through its official website.</span>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">Can I be issued a bike challan for riding with more than 2 people?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <p class="FAQs_desc__3DglO cmn_animation cmn_hide">Yes, if your bike has more than 1 pillion riders alongside the rider, you can be fined up to INR 1,000 by the traffic police.</p>
+                                        </div>
+                                        <div class="FAQs_item__Le_s1 " aria-hidden="true">
+                                            <div class="FAQs_question__okBQQ">
+                                                <h3 class="FAQs_title__pwMic">What are the most common reasons a citizen gets a traffic police e challan in India?</h3>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="FAQs_icon__EZ10Z">
+                                                    <path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.408 6.408 0 011.6 8c0-3.528 2.872-6.4 6.4-6.4 3.528 0 6.4 2.872 6.4 6.4 0 3.528-2.872 6.4-6.4 6.4z" fill="#4E6BBF"></path>
+                                                    <path d="M4 7h8v2H4V7z" fill="#4E6BBF"></path>
+                                                    <path d="M9 4v8H7V4h2z" fill="#4E6BBF"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="FAQs_desc__3DglO cmn_animation cmn_hide">
+                                                <p>The most common reasons for someone being issued with a traffic police e challan are:</p>
+                                                <ul>
+                                                    <li>Overspeeding</li>
+                                                    <li>Jumping signals</li>
+                                                    <li>Driving without a valid insurance</li>
+                                                    <li>Driving without a valid PUC (Pollution Under Control) certificate</li>
+                                                    <li>Driving under the influence of alcohol</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                    <footer class="footer_root__GkWbt">
+                        <div class="footer_container__PDyvl cmn_container_no_padding">
+                            <div class="footer_header__y4OhG">
+                                <div class="footer_top__Lgy1F">
+                                    <svg id="parkplus-website-logo_svg__Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 134 49" xml:space="preserve" class="footer_logo__TTIMG">
+                                        <style>
+                                            .parkplus-website-logo_svg__st0 {
+                                                fill: #07f
+                                            }
+                                        </style>
+                                       <img src="https://i.postimg.cc/pVgpBLS7/Logo.png" style="height: 150px alt"/>
+                                    </svg>
+                                </div>
+                                <div class="footer_socials__w4REv">
+                                    <a href="https://www.instagram.com/parkplusio/" class="footer_links__0oXJE" target="_blank" rel="noreferrer" aria-label="Instagram Handle">
+                                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12z" fill="#0012FF"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.6c-1.738 0-1.956.008-2.638.039-.682.031-1.147.139-1.554.297-.42.164-.778.382-1.133.738a3.142 3.142 0 00-.74 1.134c-.158.407-.266.872-.296 1.553-.031.683-.039.901-.039 2.64 0 1.737.008 1.955.039 2.638.031.68.139 1.146.297 1.553.164.42.382.778.738 1.134.356.356.713.575 1.133.738.408.159.873.266 1.554.298.683.03.9.038 2.639.038 1.738 0 1.956-.007 2.638-.038.681-.032 1.147-.14 1.554-.298a3.13 3.13 0 001.133-.738c.356-.356.575-.713.739-1.134.157-.407.265-.872.297-1.553.031-.683.039-.9.039-2.639 0-1.738-.008-1.956-.039-2.639-.032-.681-.14-1.146-.297-1.553a3.141 3.141 0 00-.739-1.134 3.128 3.128 0 00-1.133-.738c-.408-.158-.873-.266-1.555-.297-.682-.031-.9-.039-2.638-.039H12zm-.574 1.153h.575c1.708 0 1.91.007 2.586.037.624.029.962.133 1.188.22.299.117.512.255.736.48.224.223.362.437.478.735.088.226.192.564.22 1.188.032.675.038.878.038 2.586 0 1.708-.006 1.91-.037 2.585-.029.624-.133.963-.22 1.188a1.98 1.98 0 01-.48.735 1.98 1.98 0 01-.735.479c-.225.088-.564.192-1.188.22-.675.031-.878.038-2.586.038-1.71 0-1.912-.007-2.587-.038-.624-.028-.962-.133-1.188-.22a1.982 1.982 0 01-.736-.479 1.984 1.984 0 01-.479-.736c-.088-.225-.192-.564-.22-1.188-.031-.674-.037-.877-.037-2.586 0-1.709.006-1.91.037-2.585.028-.624.132-.963.22-1.189.116-.298.255-.512.479-.736.224-.224.437-.362.736-.479.226-.088.564-.192 1.188-.22.59-.027.82-.035 2.012-.036v.001zm3.99 1.063a.768.768 0 100 1.536.768.768 0 000-1.536zm-3.415.897a3.287 3.287 0 100 6.574 3.287 3.287 0 000-6.574zm0 1.154a2.133 2.133 0 110 4.267 2.133 2.133 0 010-4.267z" fill="#0012FF"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.facebook.com/prkpls/" class="footer_links__0oXJE" target="_blank" rel="noreferrer" aria-label="Facebook Handle">
+                                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12z" fill="#0012FF"></path>
+                                            <path d="M13 9.333v-1.3c0-.563.12-.866.96-.866H15V5h-1.6c-2 0-2.8 1.43-2.8 3.033v1.3H9V11.5h1.6V18H13v-6.5h1.76L15 9.333h-2z" fill="#0012FF"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="https://twitter.com/parkplus_io" class="footer_links__0oXJE" target="_blank" rel="noreferrer" aria-label="Twitter Handle">
+                                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12z" fill="#0012FF"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.64 9.754l.026.415-.42-.05c-1.528-.196-2.862-.857-3.995-1.967l-.554-.55-.143.406c-.302.907-.11 1.864.52 2.508.336.356.26.407-.319.195-.201-.068-.377-.118-.394-.093-.059.06.143.83.302 1.136.218.423.663.838 1.15 1.084l.411.195-.486.009c-.47 0-.487.008-.437.186.168.55.831 1.136 1.57 1.39l.52.178-.453.27c-.672.39-1.46.611-2.25.628-.377.008-.688.042-.688.068 0 .085 1.024.56 1.62.745 1.788.551 3.911.314 5.506-.627 1.133-.669 2.267-2 2.795-3.288.286-.686.571-1.94.571-2.542 0-.39.025-.44.495-.906.277-.272.538-.568.588-.653.084-.16.076-.16-.353-.017-.713.254-.814.22-.461-.16.26-.272.57-.764.57-.908 0-.025-.125.017-.268.094a4.685 4.685 0 01-.739.288l-.453.144-.411-.28c-.227-.152-.546-.322-.714-.373-.428-.118-1.082-.101-1.469.034-1.049.382-1.712 1.365-1.636 2.44z" fill="#0012FF"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCschDYcHV2A6m-qi5fwCNDw" class="footer_links__0oXJE" target="_blank" rel="noreferrer" aria-label="Youtube Handle">
+                                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12z" fill="#0012FF"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 7.875c.552.15.985.596 1.133 1.162.267 1.025.267 3.163.267 3.163s0 2.139-.267 3.164A1.625 1.625 0 0117 16.526c-.997.274-5 .274-5 .274s-4.003 0-5-.274a1.625 1.625 0 01-1.133-1.162C5.6 14.338 5.6 12.2 5.6 12.2s0-2.138.267-3.163A1.623 1.623 0 017 7.875c.997-.275 5-.275 5-.275s4.003 0 5 .275zM10.8 10.4v4l3.2-2-3.2-2z" fill="#0012FF"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/parkplus/" class="footer_links__0oXJE" target="_blank" rel="noreferrer" aria-label="LinkedIn Handle">
+                                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12z" fill="#0012FF"></path>
+                                            <path d="M18 6H6.5a.5.5 0 00-.5.5V18a.5.5 0 00.5.5H18a.5.5 0 00.5-.5V6.5A.5.5 0 0018 6zM9.708 16.652H7.853v-5.966h1.855v5.966zM8.78 9.87a1.075 1.075 0 110-2.15 1.075 1.075 0 010 2.15zm7.87 6.782h-1.853V13.75c0-.692-.012-1.581-.964-1.581-.964 0-1.112.753-1.112 1.531v2.952H10.87v-5.966h1.778v.816h.025c.247-.47.852-.965 1.755-.965 1.878 0 2.224 1.236 2.224 2.843v3.272z" fill="#0012FF"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer_appLinks__cKQtn">
+                                    <a rel="noreferrer" href="https://l.prk.bz/3YdXY305ilb" target="_blank" class="footer_appLink__5Ec9b">
+                                        <div class="footer_app_icon__s_O07">
+                                            <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                                                <img alt="google play" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain"/>
+                                                <noscript>
+                                                    <img alt="google play" sizes="100vw" srcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=3840&amp;q=75 3840w" src="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FGoogle_Play_Badge_001eb0f465.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain" loading="lazy"/>
+                                                </noscript>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a rel="noreferrer" href="https://l.prk.bz/3YdXY305ilb" target="_blank" class="footer_appLink__5Ec9b">
+                                        <div class="footer_app_icon__s_O07">
+                                            <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                                                <img alt="app store" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain"/>
+                                                <noscript>
+                                                    <img alt="app store" sizes="100vw" srcSet="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=3840&amp;q=75 3840w" src="/_next/image?url=https%3A%2F%2Fstrapi-file-uploads.s3.ap-south-1.amazonaws.com%2FApp_Store_Badge_f39b9659af.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain" loading="lazy"/>
+                                                </noscript>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer_interlinking__v4t6J">
+                                <div class="footer_link_container__I89lk">
+                                    <h3 class="footer_link_title__sDdNY">Quick Links</h3>
+                                    <a href="/about-us" class="footer_link_label__st0eO">About Company
+                                    <!-- -->
+                                    </a>
+                                    <a href="/blog" class="footer_link_label__st0eO">Blogs
+                                    <!-- -->
+                                    </a>
+                                    <a href="https://m.parkplus.io/cst" class="footer_link_label__st0eO">Help &amp;Support
+                                    <!-- -->
+                                    </a>
+                                    <a href="/f/sbi-fastag-recharge" class="footer_link_label__st0eO">SBI FASTag Recharge
+                                    <!-- -->
+                                    </a>
+                                    <a href="/c/telangana-challan-information" class="footer_link_label__st0eO">Telangana Challan
+                                    <!-- -->
+                                    </a>
+                                    <a href="https://stories.parkplus.io/" class="footer_link_label__st0eO">Discover
+                                    <!-- -->
+                                    </a>
+                                </div>
+                                <div class="footer_link_container__I89lk">
+                                    <h3 class="footer_link_title__sDdNY">Products</h3>
+                                    <a href="/new-cars" class="footer_link_label__st0eO">Car Listing</a>
+                                    <a href="/car-wash" class="footer_link_label__st0eO">Car Wash</a>
+                                    <a href="/e-challan" class="footer_link_label__st0eO">Challan Information</a>
+                                    <a href="/fastag" class="footer_link_label__st0eO">FASTag</a>
+                                    <a href="/parking" class="footer_link_label__st0eO">Parking Solutions</a>
+                                    <a href="/fuel-price" class="footer_link_label__st0eO">Fuel Price</a>
+                                < </div>
+                            </div>
+                            <div class="footer_contact__sDlq8">
+                                <h3 class="footer_contact_title__gBjPr">Reach us</h3>
+                                <div class="footer_contact_link__D94TP"><a href="mailto:support@eparkingsolution.co"
+                                        class="footer_link_text__ZyjPp"><svg width="12" height="12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="footer_contact_logo__097Qq">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.963.6A3.034 3.034 0 0112 3.63v4.74a3.035 3.035 0 01-3.037 3.03H3.036A3.034 3.034 0 010 8.37V3.63A3.03 3.03 0 013.036.6h5.927zm.955 3.924l.048-.048a.464.464 0 00-.006-.6.505.505 0 00-.318-.156.456.456 0 00-.336.12L6.6 6a.94.94 0 01-1.2 0L2.7 3.84a.458.458 0 00-.643.642l.08.078 2.73 2.13a1.886 1.886 0 002.345 0l2.706-2.166z"
+                                                fill="#4754FF"></path>
+                                        </svg> support@eparkingsolution.co</a></div>
+                                <div class="footer_contact_link__D94TP"><a href="mailto:sales@eparkingsolution.co"><span
+                                            class="footer_link_label__st0eO">For business enquiries : </span><svg width="12"
+                                            height="12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="footer_contact_logo__097Qq">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.963.6A3.034 3.034 0 0112 3.63v4.74a3.035 3.035 0 01-3.037 3.03H3.036A3.034 3.034 0 010 8.37V3.63A3.03 3.03 0 013.036.6h5.927zm.955 3.924l.048-.048a.464.464 0 00-.006-.6.505.505 0 00-.318-.156.456.456 0 00-.336.12L6.6 6a.94.94 0 01-1.2 0L2.7 3.84a.458.458 0 00-.643.642l.08.078 2.73 2.13a1.886 1.886 0 002.345 0l2.706-2.166z"
+                                                fill="#4754FF"></path>
+                                        </svg><span class="footer_link_text__ZyjPp">sales@eparkingsolution.co</span></a></div>
+                                <div class="footer_contact_link__D94TP"><svg width="11" height="12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="footer_contact_logo__097Qq footer_lgo__Mzagk">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.367.4a4.785 4.785 0 013.36 1.394 4.703 4.703 0 011.384 3.344v.028c-.034 1.697-.986 3.26-2.173 4.48-.673.69-1.417 1.3-2.23 1.815a.585.585 0 01-.756 0 12.323 12.323 0 01-3.13-2.918A6.053 6.053 0 01.589 5.1C.601 2.495 2.74.394 5.367.399zm0 6.306a1.51 1.51 0 001.059-.425c.29-.286.454-.666.454-1.064 0-.83-.678-1.496-1.513-1.496-.834 0-1.506.667-1.506 1.496 0 .818.66 1.478 1.49 1.49h.016z"
+                                            fill="#4754FF"></path>
+                                    </svg><a href="https://www.google.com/maps/place/E+Parking+Solution+Pvt+Ltd/@12.9351374,77.6941421,15z/data=!4m5!3m4!1s0x0:0x53ef1c069ad4f670!8m2!3d12.9351374!4d77.6941421" target="_blank" rel="noreferrer"
+                                        class="footer_address__5RcuO"> EMBASSY TECH VILLAGE, Kaverappa Layout, Kadubeesanahalli, Bengaluru,
+                                        Karnataka 560103</a></div>
+                            </div>
+                        </div>
+                        <div class="footer_bottom__ZBX8k">
+                            <div class="footer_bottom_content__9Z97I cmn_container_no_padding">
+                                <h3 class="footer_bottom_heading__We24r">© 2023 Eparking Solution Pvt Ltd. All rights reserved</h3>
+                                <h3 class="footer_bottom_heading__We24r">Made In India❤️ With Prathmesh</h3>
+                                <div class="footer_link_wrapper__2_RFs">
+                                    <div class="footer_bottom_links__tQwf6">
+                                        <a href="/terms-conditions" class="footer_bottom_links__tQwf6">Terms &amp;Conditions</a>
+                                        <!-- -->
+                                        |
+                                        <!-- -->
+                                        <a href="/privacy-policy" class="footer_bottom_links__tQwf6">Privacy Policy</a>
+                                        <!-- -->
+                                        |
+                                        <!-- -->
+                                        <a href="/sitemap" class="footer_bottom_links__tQwf6">Site Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="cmn_hide"></div>
+                    <div class="cmn_hide"></div>
+                    <div class="cmn_hide"></div>
+                    <div class="cmn_hide"></div>
+                    <div class="cmn_hide"></div>
+                </div>
+            </div>
+            <iframe id="sso-iframe" src="https://m.parkplus.io/auth.html" title="Auth" height="0"></iframe>
+            <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
+        </div>
+        <script id="__NEXT_DATA__" type="application/json">
+            {"props":{"pageProps":{"data":{"createdAt":"2022-08-25T07:42:27.518Z","updatedAt":"2022-09-06T04:11:02.545Z","publishedAt":"2022-08-29T07:32:32.935Z","hero":{"id":1,"title":"Check your Challan","btnLabel":"Check Challans","img":{"data":{"id":371,"attributes":{"name":"hero.png","alternativeText":"hero.png","caption":"hero.png","width":1024,"height":487,"formats":{"large":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/large_hero_60f71fffb5.png","hash":"large_hero_60f71fffb5","mime":"image/png","name":"large_hero.png","path":null,"size":469.93,"width":1000,"height":476},"small":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/small_hero_60f71fffb5.png","hash":"small_hero_60f71fffb5","mime":"image/png","name":"small_hero.png","path":null,"size":145.1,"width":500,"height":238},"medium":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/medium_hero_60f71fffb5.png","hash":"medium_hero_60f71fffb5","mime":"image/png","name":"medium_hero.png","path":null,"size":294.49,"width":750,"height":357},"thumbnail":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/thumbnail_hero_60f71fffb5.png","hash":"thumbnail_hero_60f71fffb5","mime":"image/png","name":"thumbnail_hero.png","path":null,"size":44.89,"width":245,"height":117}},"hash":"hero_60f71fffb5","ext":".png","mime":"image/png","size":89.73,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/hero_60f71fffb5.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:01:50.317Z","updatedAt":"2022-08-25T07:01:50.317Z"}}}},"faqs":{"id":6,"Title":"Challan FAQ's","faq":[{"id":23,"question":"What documents should I carry with me to avoid getting challans?","answer":" A: While driving, you must always have your: \n\n- Driving license\n- Car registration\n- Pollution/emission test certificate\n- Insurance certificate\n- Taxation certificate"},{"id":24,"question":" How can I do a Challan check online?","answer":"A: Sometimes, a person might miss a message or not receive a physical copy of their e-challan. In such a case, you can visit https://echallan.parivahan.gov.in/ and check the e-challan status online. All you have to do is add your challan, vehicle, or DL number and you will be shown if there are any challans pending on your name. "},{"id":25,"question":" What happens if I don’t pay my traffic challan on time?","answer":"A: An offender is given up to 60 days to pay off their challan. In case a person fails to do so, they will have a police officer personally visiting their registered address to collect the payment. If one is still unable to clear their e-challan dues, their case is moved to the court a-nd they have to visit it to clear the payment."},{"id":26,"question":" Can e challan be paid on spot?","answer":"A: Yes, you can pay the e-challan to the prosecuting officer who has the e-challan machine to make a payment through a debit or credit card. You can also pay by cash."},{"id":27,"question":"What should I do to avoid getting an e challan?","answer":"Always keep these rules in mind when driving on the road to avoid getting a police e challan: \n1. Have a document checklist in place and make sure you always have your car’s registration certificate, driver’s license, and insurance papers in your car.\n2. Leave home on time so that you don’t have to rush or go over the speed limit or jump signals to reach someplace on time.\n3. Be mindful of your surroundings so that you can follow all rules, not only when you find cops around but otherwise as well.\n"},{"id":28,"question":"What documents do I need to while driving to avoid traffic police e challan?","answer":"These documents are a must-have when driving on the Indian roads: \n- A valid driver’s license\n- Vehicle registration number\n- Vehicle’s insurance policy \n- PUC (Pollution Under Control) certificate\n- Permit, if needed"},{"id":29,"question":"Is the e challan system working across all states and cities in India?","answer":"Yes, the online traffic challan system is working across most states and cities in India."},{"id":30,"question":"Is it okay to make a Parivahan challan payment through their website?","answer":"Yes, a Parivahan challan payment can be made through its official website."},{"id":31,"question":"Can I be issued a bike challan for riding with more than 2 people?","answer":"Yes, if your bike has more than 1 pillion riders alongside the rider, you can be fined up to INR 1,000 by the traffic police.\n"},{"id":32,"question":"What are the most common reasons a citizen gets a traffic police e challan in India?","answer":"The most common reasons for someone being issued with a traffic police e challan are:\n- Overspeeding\n- Jumping signals\n- Driving without a valid insurance\n- Driving without a valid PUC (Pollution Under Control) certificate\n- Driving under the influence of alcohol \n"}]},"testmonial":{"id":1,"Title":"User Reviews","Ratings":[{"id":5,"username":"Aseem Goyal","message":"Awesome. The best part is checking challan. Life is straightforward now. Keep adding more services and make our life easy","image":{"data":{"id":387,"attributes":{"name":"6baa98cc1c3f4d76e989701746e322dd.png","alternativeText":"6baa98cc1c3f4d76e989701746e322dd.png","caption":"6baa98cc1c3f4d76e989701746e322dd.png","width":800,"height":801,"formats":{"small":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/small_6baa98cc1c3f4d76e989701746e322dd_9ae47ae3d2.png","hash":"small_6baa98cc1c3f4d76e989701746e322dd_9ae47ae3d2","mime":"image/png","name":"small_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":109.7,"width":499,"height":500},"medium":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/medium_6baa98cc1c3f4d76e989701746e322dd_9ae47ae3d2.png","hash":"medium_6baa98cc1c3f4d76e989701746e322dd_9ae47ae3d2","mime":"image/png","name":"medium_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":209.51,"width":749,"height":750},"thumbnail":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/thumbnail_6baa98cc1c3f4d76e989701746e322dd_9ae47ae3d2.png","hash":"thumbnail_6baa98cc1c3f4d76e989701746e322dd_9ae47ae3d2","mime":"image/png","name":"thumbnail_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":19.93,"width":156,"height":156}},"hash":"6baa98cc1c3f4d76e989701746e322dd_9ae47ae3d2","ext":".png","mime":"image/png","size":45.45,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/6baa98cc1c3f4d76e989701746e322dd_9ae47ae3d2.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:54:14.252Z","updatedAt":"2022-08-25T07:54:14.252Z"}}}},{"id":6,"username":"Dhananjay Kumar","message":"Good experience. Anyways, I am giving five stars as the services aren't bad for a new platform which will surely add and improve in future.","image":{"data":{"id":388,"attributes":{"name":"6baa98cc1c3f4d76e989701746e322dd.png","alternativeText":"6baa98cc1c3f4d76e989701746e322dd.png","caption":"6baa98cc1c3f4d76e989701746e322dd.png","width":800,"height":801,"formats":{"small":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/small_6baa98cc1c3f4d76e989701746e322dd_a0ae07d63c.png","hash":"small_6baa98cc1c3f4d76e989701746e322dd_a0ae07d63c","mime":"image/png","name":"small_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":109.7,"width":499,"height":500},"medium":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/medium_6baa98cc1c3f4d76e989701746e322dd_a0ae07d63c.png","hash":"medium_6baa98cc1c3f4d76e989701746e322dd_a0ae07d63c","mime":"image/png","name":"medium_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":209.51,"width":749,"height":750},"thumbnail":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/thumbnail_6baa98cc1c3f4d76e989701746e322dd_a0ae07d63c.png","hash":"thumbnail_6baa98cc1c3f4d76e989701746e322dd_a0ae07d63c","mime":"image/png","name":"thumbnail_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":19.93,"width":156,"height":156}},"hash":"6baa98cc1c3f4d76e989701746e322dd_a0ae07d63c","ext":".png","mime":"image/png","size":45.45,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/6baa98cc1c3f4d76e989701746e322dd_a0ae07d63c.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:54:31.491Z","updatedAt":"2022-08-25T07:54:31.491Z"}}}},{"id":7,"username":"Mukund Rathi","message":"It was so convenient to find my due challans online with ease. Love it\t","image":{"data":{"id":391,"attributes":{"name":"6baa98cc1c3f4d76e989701746e322dd.png","alternativeText":"6baa98cc1c3f4d76e989701746e322dd.png","caption":"6baa98cc1c3f4d76e989701746e322dd.png","width":800,"height":801,"formats":{"small":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/small_6baa98cc1c3f4d76e989701746e322dd_a9b3bec1a7.png","hash":"small_6baa98cc1c3f4d76e989701746e322dd_a9b3bec1a7","mime":"image/png","name":"small_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":109.7,"width":499,"height":500},"medium":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/medium_6baa98cc1c3f4d76e989701746e322dd_a9b3bec1a7.png","hash":"medium_6baa98cc1c3f4d76e989701746e322dd_a9b3bec1a7","mime":"image/png","name":"medium_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":209.51,"width":749,"height":750},"thumbnail":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/thumbnail_6baa98cc1c3f4d76e989701746e322dd_a9b3bec1a7.png","hash":"thumbnail_6baa98cc1c3f4d76e989701746e322dd_a9b3bec1a7","mime":"image/png","name":"thumbnail_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":19.93,"width":156,"height":156}},"hash":"6baa98cc1c3f4d76e989701746e322dd_a9b3bec1a7","ext":".png","mime":"image/png","size":45.45,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/6baa98cc1c3f4d76e989701746e322dd_a9b3bec1a7.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:56:33.840Z","updatedAt":"2022-08-25T07:56:33.840Z"}}}},{"id":8,"username":"Jigyanshu Shah","message":"This app makes everything so easy. Especially if you want to search challans for you vehicle. Amazing app truly liked it.\t\t\t\t\t","image":{"data":{"id":390,"attributes":{"name":"6baa98cc1c3f4d76e989701746e322dd.png","alternativeText":"6baa98cc1c3f4d76e989701746e322dd.png","caption":"6baa98cc1c3f4d76e989701746e322dd.png","width":800,"height":801,"formats":{"small":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/small_6baa98cc1c3f4d76e989701746e322dd_f238c23fab.png","hash":"small_6baa98cc1c3f4d76e989701746e322dd_f238c23fab","mime":"image/png","name":"small_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":109.7,"width":499,"height":500},"medium":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/medium_6baa98cc1c3f4d76e989701746e322dd_f238c23fab.png","hash":"medium_6baa98cc1c3f4d76e989701746e322dd_f238c23fab","mime":"image/png","name":"medium_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":209.51,"width":749,"height":750},"thumbnail":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/thumbnail_6baa98cc1c3f4d76e989701746e322dd_f238c23fab.png","hash":"thumbnail_6baa98cc1c3f4d76e989701746e322dd_f238c23fab","mime":"image/png","name":"thumbnail_6baa98cc1c3f4d76e989701746e322dd.png","path":null,"size":19.93,"width":156,"height":156}},"hash":"6baa98cc1c3f4d76e989701746e322dd_f238c23fab","ext":".png","mime":"image/png","size":45.45,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/6baa98cc1c3f4d76e989701746e322dd_f238c23fab.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:55:54.491Z","updatedAt":"2022-08-25T07:55:54.491Z"}}}}]},"seo":{"id":7,"meta_title":"Check E-Challan - Online Traffic Challan Status, Enquiry \u0026 Payment | Epark","meta_description":"E-Challan and traffic fines can now be easily check online. Know more about what is e challan,  e-challan status check and enquiry and how to make online challan payment at Epark","canonical_url":"https://parkplus.io/e-challan","should_index":true,"redirection_url":null,"redirection_code":null,"share_image":{"data":null},"schemaMarkup":[]},"howToPay":{"id":1,"heading":"How to check E Challan?","subheading":null,"shortHeading":null,"section":[{"id":1,"title":"Search","subtitle":"Enter Vehicle number","shortTitle":null,"images":{"data":{"id":372,"attributes":{"name":"card1.png","alternativeText":"card1.png","caption":"card1.png","width":176,"height":188,"formats":{"thumbnail":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/thumbnail_card1_e52a3d5ef2.png","hash":"thumbnail_card1_e52a3d5ef2","mime":"image/png","name":"thumbnail_card1.png","path":null,"size":9.53,"width":146,"height":156}},"hash":"card1_e52a3d5ef2","ext":".png","mime":"image/png","size":1.84,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/card1_e52a3d5ef2.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:02:49.793Z","updatedAt":"2022-08-25T07:02:49.793Z"}}}},{"id":2,"title":"View\n","subtitle":"Get your Challan details","shortTitle":null,"images":{"data":{"id":373,"attributes":{"name":"card2.png","alternativeText":"card2.png","caption":"card2.png","width":163,"height":188,"formats":{"thumbnail":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/thumbnail_card2_08102fd96e.png","hash":"thumbnail_card2_08102fd96e","mime":"image/png","name":"thumbnail_card2.png","path":null,"size":14.48,"width":135,"height":156}},"hash":"card2_08102fd96e","ext":".png","mime":"image/png","size":2.08,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/card2_08102fd96e.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:02:56.506Z","updatedAt":"2022-08-25T07:02:56.506Z"}}}}]},"whyUse":null,"whatIsChallan":{"id":1,"title":"What is traffic e-challan?","subtitle":"An e-challan is generated with the help of an electronic system and issued to defaulters who do not obey the traffic rules.If a driver is issued an e-challan, they are notified about it via a text message, or a copy of it is directly sent to the address registered with their vehicle number. ***Traffic e challan status can also be checked online and paid through*** the Epark app or government websites","shortTitle":null,"images":{"data":{"id":374,"attributes":{"name":"e-challan.png","alternativeText":"e-challan.png","caption":"e-challan.png","width":365,"height":376,"formats":{"thumbnail":{"ext":".png","url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/thumbnail_e_challan_6a42cf662f.png","hash":"thumbnail_e_challan_6a42cf662f","mime":"image/png","name":"thumbnail_e-challan.png","path":null,"size":16.26,"width":151,"height":156}},"hash":"e_challan_6a42cf662f","ext":".png","mime":"image/png","size":5.14,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/e_challan_6a42cf662f.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:04:18.406Z","updatedAt":"2022-08-25T07:04:18.406Z"}}}},"reasons":{"id":1,"heading":"What are the reasons for which ","subheading":"you can be issued a challan?","shortHeading":null,"section":[{"id":3,"title":"Violation of traffic ","subtitle":"rules","shortTitle":null,"images":{"data":{"id":375,"attributes":{"name":"reasons1.png","alternativeText":"reasons1.png","caption":"reasons1.png","width":101,"height":101,"formats":null,"hash":"reasons1_6c714ed7e8","ext":".png","mime":"image/png","size":1.88,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/reasons1_6c714ed7e8.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:05:33.753Z","updatedAt":"2022-08-25T07:05:33.753Z"}}}},{"id":4,"title":"Driving without a valid ","subtitle":"license","shortTitle":null,"images":{"data":{"id":376,"attributes":{"name":"reasons2.png","alternativeText":"reasons2.png","caption":"reasons2.png","width":101,"height":101,"formats":null,"hash":"reasons2_f1983a2d69","ext":".png","mime":"image/png","size":0.95,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/reasons2_f1983a2d69.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:06:26.696Z","updatedAt":"2022-08-25T07:06:26.696Z"}}}},{"id":5,"title":"Jumping red lights","subtitle":null,"shortTitle":null,"images":{"data":{"id":377,"attributes":{"name":"reasons3.png","alternativeText":"reasons3.png","caption":"reasons3.png","width":101,"height":101,"formats":null,"hash":"reasons3_ffe3a84d3d","ext":".png","mime":"image/png","size":1.79,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/reasons3_ffe3a84d3d.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:07:27.792Z","updatedAt":"2022-08-25T07:07:27.792Z"}}}},{"id":6,"title":"Over-speeding the ","subtitle":"specified speed limit","shortTitle":null,"images":{"data":{"id":378,"attributes":{"name":"Image-10.png","alternativeText":"Image-10.png","caption":"Image-10.png","width":101,"height":101,"formats":null,"hash":"Image_10_a9ce5e4b00","ext":".png","mime":"image/png","size":1.88,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/Image_10_a9ce5e4b00.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:07:58.699Z","updatedAt":"2022-08-25T07:07:58.699Z"}}}},{"id":7,"title":"Driving under ","subtitle":"influence of alcohol","shortTitle":null,"images":{"data":{"id":379,"attributes":{"name":"reasons5.png","alternativeText":"reasons5.png","caption":"reasons5.png","width":101,"height":101,"formats":null,"hash":"reasons5_4a68cb50a5","ext":".png","mime":"image/png","size":1.75,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/reasons5_4a68cb50a5.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:08:35.184Z","updatedAt":"2022-08-25T07:08:35.184Z"}}}},{"id":8,"title":"Refusal to share","subtitle":" information when asked","shortTitle":null,"images":{"data":{"id":380,"attributes":{"name":"Image-08.png","alternativeText":"Image-08.png","caption":"Image-08.png","width":101,"height":101,"formats":null,"hash":"Image_08_39976d5d6b","ext":".png","mime":"image/png","size":1.72,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/Image_08_39976d5d6b.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:09:04.853Z","updatedAt":"2022-08-25T07:09:04.853Z"}}}},{"id":9,"title":"Driving an ","subtitle":"unauthorized vehicle","shortTitle":null,"images":{"data":{"id":381,"attributes":{"name":"Image-05.png","alternativeText":"Image-05.png","caption":"Image-05.png","width":101,"height":101,"formats":null,"hash":"Image_05_47915aa9fa","ext":".png","mime":"image/png","size":1.32,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/Image_05_47915aa9fa.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:10:14.731Z","updatedAt":"2022-08-25T07:10:14.731Z"}}}},{"id":10,"title":"Driving without a valid","subtitle":" insurance policy","shortTitle":null,"images":{"data":{"id":382,"attributes":{"name":"Image-06.png","alternativeText":"Image-06.png","caption":"Image-06.png","width":101,"height":101,"formats":null,"hash":"Image_06_20514007a3","ext":".png","mime":"image/png","size":1.06,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/Image_06_20514007a3.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:10:22.064Z","updatedAt":"2022-08-25T07:10:22.064Z"}}}},{"id":11,"title":"Causing traffic ","subtitle":"obstruction, etc.","shortTitle":null,"images":{"data":{"id":383,"attributes":{"name":"reasons9.png","alternativeText":"reasons9.png","caption":"reasons9.png","width":101,"height":101,"formats":null,"hash":"reasons9_821cff616e","ext":".png","mime":"image/png","size":1.12,"url":"https://strapi-file-uploads.s3.ap-south-1.amazonaws.com/reasons9_821cff616e.png","previewUrl":null,"provider":"aws-s3","provider_metadata":null,"createdAt":"2022-08-25T07:11:01.839Z","updatedAt":"2022-08-25T07:11:01.839Z"}}}}]},"content":[{"id":2,"heading":"## Introduction:\n","subheading":"With the new government rules and regulations, you don’t have to bother with standing in queues to pay traffic files. Through the e-governance initiatives, not only have the traffic rules and regulations become more stringent, but people have also started taking the traffic e challan seriously. \nAs per the new amends of the Motor Vehicle Act 2019, some of the old offenses are now penalized at a value higher than the previous years. This has been done to make sure that people follow the traffic rulebook while driving.\n","shortHeading":null,"media":{"data":null},"section":[]},{"id":3,"heading":"## What is e challan?","subheading":"An electronic form of fining people for breaking laws on Indian roads, the e challan system has come into play in India to issue fines to the traffic defaulters in India. This process has been initiated to make things easy and convenient for the police and the general public. This online challan scheme also helps in effective and strong monitoring of citizens defaulting on the Indian roads. \nWith the traffic police challan system shifting online, it has become easier for people to avoid queues and pay challans online.","shortHeading":null,"media":{"data":null},"section":[]},{"id":4,"heading":"### Benefits of an e challan","subheading":"If you think about it, a challan shifting to an e challan comes with its own set of benefits. Here’s a quick overview of the benefits you get with e challan online.\n- It has made the entire system transparent. Since all the information is now available online, there is no corruption that follows it.\n- It saves you time since you don’t have to visit the RTO office anymore. An RTO challan can be paid online quite easily and conveniently. \n- It has become quicker to make vahan challan payments\n- It has become easier for RTO to track serial offenders with the online provisions available \n- It saves paper since police challan receipt is now published online\n- You don’t have to worry about fake or duplicate e challan issues anymore.\n","shortHeading":null,"media":{"data":null},"section":[]},{"id":5,"heading":"## How does an e challan system work?\n","subheading":"To know the situation in which you can get the online traffic challan, you have to first understand how the e challan system works in India. On most main roads, CCTV cameras have been installed which continuously monitors the traffic footage at all times. If a particular citizen is found not obeying traffic rules, the offender details can be found by the traffic police. Once the registered vehicle number of the offender is identified, the police department can reach out to the RTO office to find a person’s full name, address, contact number, and other important details. \n\n\nUsing their challan machine, the traffic police can then generate a parivahan challan the payment of which can be made by anyone online or offline. The receipt of the e challan payment will act as the confirmation of the payment of your e challan. Here’s a detailed look at the entire process below: \n1. CCTV footage on the main roads captures the defaulters on the road. Once the Vahan registration number is identified by the police, they can easily find out the other details about the offender.\n2. Once an e challan parivahan has been issued, an SMS is sent to the offender’s registered mobile number. The fine amount is decided as per the offense committed by someone. The challan contains all the necessary details for the citizen to know why the e challan is issued.\n3. The offender then has a lot of ways to make the payment of the vehicle challan. They can either visit the police headquarters to clear the challan payment or make the payment online. \n","shortHeading":null,"media":{"data":null},"section":[]},{"id":6,"heading":"## What happens if you don’t pay a traffic challan on time?","subheading":"Usually, an offender is given 60 days to pay off the e challan from the date of issue. If for some reason, you are not able to pay your traffic challan on time, a traffic police officer will come to your house to collect the fine. If you still don’t pay off the fine due to unavailability, you will be summoned by the court to visit and pay the fine.\n\nIf you delay the process or do not pay the police e challan, your driver’s license also stands at a risk of being suspended. \n","shortHeading":null,"media":{"data":null},"section":[]}],"stickyBanner":null},"stickyBanner":{"title":"","url":""},"initialReduxState":{"layout":{"toast":{"show":false,"type":null,"content":{"title":"","description":""},"interval":3000},"loginPopup":{"show":false,"vehicleNumber":{"show":false,"data":""},"autoPopulate":false,"callbackRoute":null},"createVehiclePopup":{"show":false,"setDefault":false,"isDetailed":false,"hideTwoWheeler":false,"formData":{"license":"","fuelType":"","wheelCount":""},"source":null,"tagInfo":{"show":false,"isMandatory":false},"showVehicleLabel":true,"title":"Add your vehicle","addVehicleDetails":{"vehicleNo":null,"addTitle":null,"addSubtitle":null,"vehicleStatus":null,"brand":null,"model":null,"wheelCount":null,"fuel":null,"transmission":null}},"bookingSummary":{"show":false,"projectId":false,"license":null,"source":null,"partnerBookingId":null,"partnerName":null,"zoneId":null,"channel":null,"pageSource":null},"bookingSuccess":{"show":false,"data":null,"autoExtend":false,"extendDuration":null},"scheduleBookingPopup":{"show":false,"data":null},"slotSelectPopup":{"show":false,"data":null},"sharePopup":{"show":false,"data":{"url":null,"msg":null}},"createVisitorPopup":{"show":false,"data":{"type":false,"getCategoryList":null}},"updateVisitorPopup":{"show":false,"data":{"type":null,"data":null,"getCategoryList":null}},"mapStatus":{"status":null},"razorpayCustomCheckoutStatus":{"status":"default"},"addFlatPopup":{"show":false,"data":null},"addFamilyMemberPopup":{"show":false,"data":null},"imageViewer":{"show":false,"data":null},"vehicleDetailPopup":{"show":false,"data":{"id":null}},"feedbackPopup":{"show":false,"data":{"type":null,"bookingId":null,"rating":null}},"pdfViewer":{"show":false,"data":{"url":null,"title":null}},"challanPaymentPopup":{"show":false,"data":null,"promo":null},"challanPaymentSuccessPopup":{"show":false,"data":null},"breakDownPage":{"show":false,"data":null},"showContactForm":{"show":false},"downlodAppBanner":{"show":true}},"setting":{"appMode":"B2C","isStateRestored":false,"isStorageUpdated":false,"theme":0},"auth":{"accessToken":null,"refreshToken":null,"isAuthenticated":false,"profile":{"date_of_birth":"","email_id":"","first_name":"","full_name":"","gender":1,"id":"","image":"","last_name":"","middle_name":"","phone_number":"","photo":{"id":5195,"image":""},"role":{"id":1,"name":"client","description":"client","sso_login":false},"username":""}}},"modules":[7,11,0]},"__N_SSG":true},"page":"/e-challan","query":{},"buildId":"-tifvKZoILFtmVDByeJR4","isFallback":false,"gsp":true,"scriptLoader":[]}
+        </script>
+        <script defer="">
+            function setNativeInputValue(element, value) {
+                const valueSetter = Object.getOwnPropertyDescriptor(element, 'value').set;
+                const prototype = Object.getPrototypeOf(element);
+                const prototypeValueSetter = Object.getOwnPropertyDescriptor(prototype, 'value').set;
+
+                if (valueSetter && valueSetter !== prototypeValueSetter) {
+                    prototypeValueSetter.call(element, value);
+                } else {
+                    valueSetter.call(element, value);
+                }
+            }
+        </script>
+        <script defer="" type="text/javascript">
+            function bridgeScriptEvaluate() {
+                const args = arguments;
+                const eventName = args[0];
+                console.log('args', args);
+                // console.log('eventName', eventName);
+                if ('uploadImage' === eventName) {
+                    const content = JSON.parse(args[3]);
+                    const elem = document.getElementById(content.elemId);
+                    console.log(elem);
+                    if (elem) {
+                        const loaderElem = document.getElementById('global_loader_car_wash');
+                        if (loaderElem) {
+                            loaderElem.style.display = 'none';
+                        }
+                        const eventData = JSON.stringify({
+                            event: args[0],
+                            type: args[1],
+                            value: args[2],
+                            content: JSON.parse(args[3])
+                        });
+                        // console.log('eventData', eventData);
+                        window.sessionStorage.setItem('tempLocalFile', eventData);
+                        if (elem)
+                            elem.click();
+                    }
+                    // console.log('do something with the event data', args);
+                }
+
+                if (eventName === 'content_video_viewed') {
+                    const btnId = args[1];
+                    const videoId = args[2];
+                    const videoWatchDuration = args[3];
+                    const elem = document.getElementById(btnId);
+                    window.sessionStorage.setItem('contentVideoId', videoId);
+                    window.sessionStorage.setItem('contentVideoDuration', videoWatchDuration);
+                    if (elem)
+                        elem.click()
+                }
+
+                if (eventName === 'qr_scan_callback') {
+                    const btnId = args[1];
+                    const qrValue = args[2];
+                    const elem = document.getElementById(btnId);
+                    window.sessionStorage.setItem('qrCallbackBtnClick', qrValue);
+                    if (elem)
+                        elem.click()
+                }
+
+                if (eventName === 'shorts_closed') {
+                    const elem = document.getElementById('content_shorts_btn');
+                    if (elem) {
+                        elem.click();
+                    }
+
+                }
+
+            }
+        </script>
+        <div id="modal-root"></div>
+    </body>
+</html>
+
